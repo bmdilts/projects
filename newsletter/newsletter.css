@@ -1,0 +1,130 @@
+body{
+  width: 100%;
+  height: auto;
+}
+.nav_container{
+  display: flex;
+  background-color: #FFFFFF;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3em;
+  width: 100%;
+  /*padding: .5em;*/
+}
+#logo{
+  background-image: url(../images/bent-creek-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0 0 10px;
+  /*background-size: 32px 30px;*/
+  height: 30px;
+  width: 32px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+/*.nav_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: auto;
+}
+.nav_container{
+  background-image: url(../images/bent-creek-logo.png);
+  background-repeat: no-repeat;
+  background-size: 32px 30px;
+  background-position: top left;
+}
+nav{
+  background-color: #FFFFFF;
+}*/
+nav a{
+  color: #2B2F26;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: underline;
+  font-size: small;
+  padding: 0 1.5em 0 1.5em;
+  text-transform: uppercase;
+}
+nav a:link{
+  color: #2B2F26;
+}
+nav a:hover{
+  color: #CD5D67;
+  transition: .5s ease;
+}
+nav a:active{
+  color: #968772;
+}
+nav>.active_page{
+    color: #968772;
+}
+/*#logo{
+  max-height: 2em;
+  align-self: flex-end;
+}*/
+.main{
+  background-image: url(../images/background-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: bottom;
+  color: #131511;
+  padding: .5em 0 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_container{
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30em;
+  /*margin: 4em 12em 3em 12em;*/
+  text-align: center;
+  padding: 1em 0 2em 0;
+}
+.form_container h2{
+  font-weight: 300;
+  font-size: 1.65em;
+}
+.form_container p{
+  font-size: 1.2em;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+}
+.inputs input{
+  width: 90%;
+  margin: 1em;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #968772;
+  font-size: small;
+  padding: .5em 0 .5em 0;
+}
+.inputs input:focus{
+  border-bottom: 2px solid #967343;
+  transition: .5s ease;
+  outline: none;
+}
+.submit{
+  background-color: #968772;
+  color: #F2F1E8;
+  border: none;
+  font-size: medium;
+  margin-top: 1em;
+  padding: 1em 0 1em 0;
+  text-align: center;
+  width: 30%;
+}
+.submit:hover{
+  background-color: #967343;
+  color: #FFFFFF;
+}

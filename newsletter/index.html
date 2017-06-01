@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bent Creek Ceramics - Newsletter</title>
+    <link rel="stylesheet" type="text/css" href="/newsletter/newsletter.css">
+    <style>
+    @import
+    url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i');
+    </style>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="nav_container">
+      <!-- <img id="logo" src= "../images/bent-creek-logo.png" alt="Bent creek nested inside jar"> -->
+      <div id="logo"></div>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about/index.html">About</a>
+        <a class="active_page" href="/newsletter/index.html">Newsletter</a>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="form_container">
+        <h2>Sign Up for Our Weekly Newsletter</h2>
+        <p>
+          Stay up to date with events, activities, news and specials.
+        </p>
+        <div class="inputs">
+          <input id="nameInput" type="text" placeholder="Name" required>
+          <input id="emailInput" type="email" placeholder="Email" required>
+        </div>
+        <button id="signupButton" class="submit">Submit</button>
+      </div>
+    </div>
+    <!-- Javascript bonus -->
+    <script type="text/javascript">
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  var signupButton = document.getElementById('signupButton');
+  signupButton.addEventListener('click', function(e) {
+    var nameVal = nameInput.value;
+    var emailVal = emailInput.value;
+    if (nameVal && emailVal) {
+      alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+      nameInput.value = "";
+      emailInput.value = "";
+    } else {
+      alert('We would love for you to sign up, please provide both your name and email address.');
+    }
+  });
+</script>
+<!-- Javascript bonus -->
+  </body>
+</html>

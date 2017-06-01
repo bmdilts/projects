@@ -1,0 +1,199 @@
+body{
+  width: 100%;
+  height: auto;
+}
+.nav_container{
+  display: flex;
+  background-color: #FFFFFF;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2em;
+  width: 100%;
+  padding: .5em;
+}
+#logo{
+  background-image: url(images/bent-creek-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0 0 10px;
+  /*background-size: 32px 30px;*/
+  height: 30px;
+  width: 32px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+/*.nav_container{
+  background-image: url(images/bent-creek-logo.png);
+  background-repeat: no-repeat;
+  margin: 10px 0 -5px 0;
+  background-size: 32px 30px;
+  background-position: top left;
+  /*position: fixed;*/
+  /*z-index: 3;*/
+
+/*nav{
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+}*/
+nav a{
+  color: #2B2F26;
+  font-family: 'Roboto', sans-serif;
+  font-size: small;
+  padding: 0 1.5em 0 1.5em;
+  text-transform: uppercase;
+}
+a:link{
+  color: #2B2F26;
+}
+a:hover{
+  color: #CD5D67;
+  transition: .5s ease;
+}
+a:active{
+  color: #968772;
+}
+nav>a.active_page{
+    color: #968772;
+}
+header{
+  font-family: 'Merriweather', serif;
+  color: #131511;
+  text-align: center;
+  padding: .5em 0 0 0;
+  margin: 2em .5em .5em .5em;
+}
+header h1{
+  font-weight: 400;
+  font-size: 2.75em;
+  margin-bottom: 0;
+}
+header h2{
+  font-weight: 200;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+.main{
+  background-color: #F2F1E8;
+  padding: 0 1.5em 1em 1em;
+  /*position: relative;*/
+  /*z-index: 1;*/
+}
+.photos{
+  font-family: 'Merriweather', serif;
+}
+.top_row{
+  display: flex;
+  flex-direction: row;
+  margin: -2.5em 0 0 0;
+}
+.label1{
+  background-color: #2b2f26;
+  color: #F2F1E8;
+  padding: .5em;
+  font-size: small;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+  margin: 20em 0 -18em 0;
+}
+.img1{
+  width: 100%;
+  height: 15.5em;
+  position: relative;
+  z-index: 1;
+}
+.endless{
+  width: 60%;
+  flex: 6;
+  margin: 0 .5em 2.5em 0;
+}
+.sets{
+  width: 20%;
+  flex: 2;
+  margin: 0 .5em 2.25em 0;
+}
+.textures{
+  width: 20%;
+  flex: 2;
+}
+#succ{
+  background-image: url(images/product-1.jpg);
+  background-size: cover;
+}
+#bowl{
+  background-image: url(images/product-2.jpg);
+  background-size: cover;
+}
+#platter{
+  background-image: url(images/product-3.jpg);
+  background-size: cover;
+}
+.bottom_row{
+  display: flex;
+  flex-direction: row;
+  margin: -2em 0 1em 0;
+}
+.img2{
+  width: 100%;
+  height: 10em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.label2{
+  background-color: #2b2f26;
+  color: #F2F1E8;
+  font-size: small;
+  padding: .5em;
+  width: fit-content;
+  margin: -3.5em 0 1em 0;
+  position: relative;
+  z-index: 2;
+}
+.tea {
+  margin: 0 .5em 0 0;
+  width: 20%;
+  flex: 2;
+}
+.jars{
+  margin: 0 .5em 0 0;
+  width: 20%;
+  flex: 2;
+}
+.wasabi{
+  margin: 0 .5em 0 0;
+  flex: 4;
+  width: 40%;
+}
+.sunshine{
+  width: 20%;
+  flex: 2;
+  overflow: hidden;
+}
+#tea_cup{
+  background-image: url(images/product-4.jpg);
+  background-size: cover;
+}
+#brown_jar{
+  background-image: url(images/product-5.jpg);
+  background-size: cover;
+}
+#wasabi{
+  background-image: url(images/product-6.jpg);
+  background-size: cover;
+}
+#coffee_cup{
+  background-image: url(images/product-7.jpg);
+  background-size: cover;
+}
+footer{
+  background-color: #2b2f26;
+  color: #F2F1E8;
+  padding: 1em;
+  font-size: .9em;
+}
